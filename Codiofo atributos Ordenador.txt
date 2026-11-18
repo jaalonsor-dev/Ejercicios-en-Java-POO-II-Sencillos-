@@ -1,0 +1,40 @@
+class PC_COMPONENTES {
+    // Atributos de la clase
+    String tipo;
+    String procesador;
+    int ram;
+    int almacenamiento_gb;
+    String color;
+    int modelo;
+    String gama;
+    
+    // Método para mostrar la información de la PC
+    public void mostrarInfo() {
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Procesador: " + procesador);
+        System.out.println("RAM: " + ram + " GB");
+        System.out.println("Almacenamiento: " + almacenamiento_gb + " GB");
+        System.out.println("Color: " + color);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("La gama de este esquipo es:" + gama);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear un objeto de la clase PC_COMPONENTES
+        PC_COMPONENTES miPC = new PC_COMPONENTES();
+        
+        // Asignar valores a los atributos del objeto
+        miPC.tipo = "Laptop";
+        miPC.procesador = "Intel Core celeronN4000";
+        miPC.ram = 8;
+        miPC.almacenamiento_gb = 1000;
+        miPC.color = "gris";
+        miPC.modelo = 2019;
+        miPC.gama = "Es un ordenador de una gama familiar para uso estudiantil";
+        
+        // Llamar al método para mostrar la información
+        miPC.mostrarInfo();
+    }
+}

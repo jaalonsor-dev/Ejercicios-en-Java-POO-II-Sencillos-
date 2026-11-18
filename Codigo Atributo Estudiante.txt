@@ -1,0 +1,39 @@
+public class Estudiante {
+    // Atributos
+    String nombre;
+    int edad;
+    String carrera;
+    String universidad;
+    String matricula;
+    int anioIngreso;
+    String correo;
+
+    // Método para mostrar información
+    void mostrarInfo() {
+        System.out.println("Nombre del estudiante: " + nombre);
+        System.out.println("Edad: " + edad + " años");
+        System.out.println("Carrera: " + carrera);
+        System.out.println("Universidad: " + universidad);
+        System.out.println("Matrícula: " + matricula);
+        System.out.println("Año de ingreso: " + anioIngreso);
+        System.out.println("Correo institucional: " + correo);
+    }
+
+    // Método principal para probar la clase
+    public static void main(String[] args) {
+        // Crear un objeto de tipo Estudiante
+        Estudiante estudiante1 = new Estudiante();
+
+        // Asignar valores a los atributos
+        estudiante1.nombre = "Julian Alonso";
+        estudiante1.edad = 23;
+        estudiante1.carrera = "Ingeniería en Sistemas";
+        estudiante1.universidad = "Universidad Del Tolima";
+        estudiante1.matricula = "202312345";
+        estudiante1.anioIngreso = 2023;
+        estudiante1.correo = "jaalonsor@ut.edu.com.co";
+
+        // Usar el método
+        estudiante1.mostrarInfo();
+    }
+}

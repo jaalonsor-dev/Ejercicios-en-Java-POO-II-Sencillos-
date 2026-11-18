@@ -1,0 +1,42 @@
+public class Vehiculo {
+    // Atributos
+    String tipo;
+    String marca;
+    String modelo;
+    String color;
+    String motor;
+    String velocidad;
+    int placa;
+    int anio;
+
+    // Método para mostrar información
+    void mostrarInfo() {
+        System.out.println("La Marca de la moto es: " + marca);
+        System.out.println("El Modelo es: " + modelo);
+        System.out.println("El Año de esta moto es: " + anio);
+        System.out.println("El Color es: " + color);
+        System.out.println("El Tipo es: " + tipo);
+        System.out.println("El Motor es: " + motor);
+        System.out.println("La velocidad máxima es en km/h: " + velocidad);
+        System.out.println("La Placa es: " + placa);
+    }
+
+    // Método principal para probar la clase
+    public static void main(String[] args) {
+        // Crear un objeto de tipo Vehiculo (moto)
+        Vehiculo miMoto = new Vehiculo();
+
+        // Asignar valores a los atributos
+        miMoto.marca = "Yamaha";
+        miMoto.modelo = "YZF-R1";
+        miMoto.anio = 2022;
+        miMoto.color = "Azul";
+        miMoto.tipo = "Deportiva";
+        miMoto.motor = "4 cilindros en línea, 998 cc";
+        miMoto.velocidad = "299 km/h";
+        miMoto.placa = 123456;
+
+        // Usar el método
+        miMoto.mostrarInfo();
+    }
+}
